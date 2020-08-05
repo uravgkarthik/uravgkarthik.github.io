@@ -1,0 +1,48 @@
+//
+// experience-education.scss
+//
+.cv-heading {
+  font-size: 12px;
+  text-align: right;
+  h3{
+    position: relative;
+    padding-bottom: 14px;
+    font-family: 'Roboto', sans-serif;
+    &:after {
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        width: 100px;
+        border-bottom: 1px solid rgba(181, 181, 181, 0.1);
+        content: "";
+      }
+    span {
+        position: relative;
+        small {
+            position: absolute;
+            top: -10px;
+            left: 0;
+            font-size: 12px;
+          }
+      }
+
+      
+
+  }
+  h4 {
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+  }
+}
+
+
+.cv-content {
+  padding: 15px 0 5px 30px;
+  border-left: 1px solid rgba(181, 181, 181, 0.1);
+  margin-top: -10px;
+  h4{
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 15px;
+  }
+}

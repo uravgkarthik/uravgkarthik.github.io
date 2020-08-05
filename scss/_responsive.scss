@@ -1,0 +1,97 @@
+//
+// responsive.scss
+//
+
+
+@media (max-width: 1199px) {
+  #sidebar {
+    width: 230px;
+  }
+  #content {
+    width: 690px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  #container{
+    padding-top: 0px;
+  }
+  #sidebar {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+  #sidebar .sidebar-section.white-box {
+    display: none;
+  }
+  #content {
+    width: 100%;
+  }
+  header .main-menu {
+    text-align: center;
+  }
+  a.elemadded {
+    display: block;
+  }
+  .navbar-vertical {
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    top: 100%;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    transition: all 0.23s ease-in-out;
+    -moz-transition: all 0.23s ease-in-out;
+    -webkit-transition: all 0.23s ease-in-out;
+    -o-transition: all 0.23s ease-in-out;
+    max-height: 320px;
+  }
+  
+  .navbar-vertical.active {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    transition: all 0.23s ease-in-out;
+    -moz-transition: all 0.23s ease-in-out;
+    -webkit-transition: all 0.23s ease-in-out;
+    -o-transition: all 0.23s ease-in-out;
+  }
+  .content h1{
+    font-size: 2.1em;
+  }
+  .check{
+    padding-top: 20px;
+  }
+  .check li{
+    width: 49%;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 960px){
+  .fl_menu{
+    position:absolute; 
+  }
+}
+
+
+@media screen and (max-width: 480px){
+.about ul li {
+  width: 100%;
+}
+}

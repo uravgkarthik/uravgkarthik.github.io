@@ -1,0 +1,36 @@
+/* Template Name: Swiftly - Responsive Personal Template
+   Author: Themesdesign
+   Version: 1.0.0
+   Created: Feb 2019
+   File Description: Main Css file of the template
+*/
+
+/****************************************\
+
+01.general
+02.helper
+03.components
+04.menu
+05.home
+06.about
+07.skills
+08.experience-education
+09.portfolio
+10.contact
+11.footer
+12.responsive
+*****************************************/
+
+@import "variables";
+@import "general";
+@import "helper";
+@import "component";
+@import "menu";
+@import "home";
+@import "about";
+@import "skills";
+@import "experience-education";
+@import "portfolio";
+@import "contact";
+@import "footer";
+@import "responsive";

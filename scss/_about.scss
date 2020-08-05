@@ -1,0 +1,27 @@
+//
+// about.scss
+//
+
+
+.about {
+    span{
+        font-family: 'Oswald', sans-serif;
+        padding-right: 5px;
+      }
+      ul {
+        margin-top: 20px;
+        padding: 0;
+        list-style: none;
+        li {
+            border-bottom: 1px solid $light;
+            padding: 10px 0;
+            width: 46%;
+            float: left;
+            margin-right: 4% !important;
+          }
+          &:nth-child(2n){
+            margin-right: 0%;
+          }
+      }
+}
+ 

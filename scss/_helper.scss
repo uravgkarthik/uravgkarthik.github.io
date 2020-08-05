@@ -1,0 +1,147 @@
+//
+// helper.scss
+//
+
+
+.section {
+    padding: 40px 30px 40px 30px;
+    position: relative;
+}
+
+.clear{
+    clear: both;
+  }
+
+.vertical-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+}
+
+.bg-overlay {
+    background-color: rgba(29, 29, 29, 0.8);
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.f-10{
+    font-size: 10px;
+}
+
+.f-12 {
+    font-size: 12px;
+}
+
+.f-13{
+    font-size: 13px;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.f-15 {
+    font-size: 15px;
+}
+
+.f-17{
+    font-size: 17px;
+}
+
+.f-16 {
+    font-size: 16px;
+}
+
+.f-18 {
+    font-size: 18px;
+}
+
+.f-20 {
+    font-size: 20px;
+}
+
+.line-height_1_4 {
+    line-height: 1.4;
+}
+
+.line-height_1_6 {
+    line-height: 1.6;
+}
+
+.line-height_1_8 {
+    line-height: 1.8;
+}
+
+.title-desc{
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+
+.bg-dark{
+    background: $dark !important;
+}
+
+.bg-light{
+    background: $light !important;
+}
+
+hr {
+    border-top: 1px solid rgba(181, 181, 181, 0.1);
+}
+
+
+.back-to-top {
+    width: 40px;
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+    display: none;
+    text-align: center;
+    z-index: 10000;
+    i {
+        color: $white;
+        font-size: 30px;
+        display: block;
+        line-height:50px;
+      }
+  }
+ 
+
+  h1,
+  .h1 {
+    font-size: 36px;
+  }
+  h2,
+  .h2 {
+    font-size: 30px;
+  }
+  h3,
+  .h3 {
+    font-size: 24px;
+  }
+  h4,
+  .h4 {
+    font-size: 18px;
+  }
+  h5,
+  .h5 {
+    font-size: 14px;
+  }
+  h6,
+  .h6 {
+    font-size: 12px;
+  }

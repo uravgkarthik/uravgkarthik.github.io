@@ -1,0 +1,44 @@
+//
+// footer.scss
+//
+
+.bg-footer{
+    background: lighten($dark,90%);   
+}
+
+
+.footer-social {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: inline-block;
+    color: $white;
+    line-height: 46px;
+    text-align: center;
+    &:hover{
+        color: $white;
+    }
+
+}
+
+
+  .footer-social-icon .btn{
+    min-width: 110px;
+    margin-top: 15px;
+  }
+  .facebook{
+    background-color: #3b5998;
+  }
+  .tweeter {
+    background-color: #00aced;
+  }
+  .skype {
+    background-color: #00aff0;
+  }
+  .instagram{
+    background-color: #3f729b;
+  }
+
+  .bg-footer-alt{
+      background: $dark;
+  }
