@@ -894,6 +894,10 @@ a.elemadded:hover {
   .fl_menu {
     position: absolute;
   }
+  .smolimg{
+    width: 20rem !important;
+    height: 20rem !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
