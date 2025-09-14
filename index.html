@@ -171,6 +171,20 @@
             cursor: pointer;
         }
 
+        .nav-links.mobile-menu-open {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 0 0 15px 15px;
+            padding: 1rem;
+            box-shadow: var(--shadow-lg);
+        }
+
         /* Hero Section */
         .hero {
             min-height: 100vh;
@@ -812,6 +826,10 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            .nav-container {
+                padding: 0;
+            }
+
             .nav-links {
                 display: none;
             }
@@ -820,14 +838,25 @@
                 display: block;
             }
 
+            .section {
+                padding: 3rem 1rem;
+            }
+
             .hero-buttons {
                 flex-direction: column;
                 align-items: center;
+                gap: 1rem;
             }
 
-            .about-content {
+            .about-content,
+            .contact-content {
                 grid-template-columns: 1fr;
                 gap: 2rem;
+            }
+
+            .skills-grid,
+            .certifications-grid {
+                grid-template-columns: 1fr;
             }
 
             .timeline::before {
@@ -845,12 +874,13 @@
                 left: 12.5px !important;
             }
 
-            .contact-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
+            .social-links {
+                gap: 1rem;
+                flex-wrap: wrap;
             }
 
-            .social-links {
+            .stats {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
                 gap: 1rem;
             }
         }
@@ -897,7 +927,7 @@
         <div class="hero-content">
             <p class="hero-greeting">Hello, I'm</p>
             <h1 class="hero-name">Karthik Ravishankar</h1>
-            <h2 class="hero-title">DevOps Engineer & Cloud Architect</h2>
+            <h2 class="hero-title">DevOps Engineer</h2>
             <p class="hero-description">
                 Transforming development workflows with 5+ years of expertise in cloud-native solutions,
                 CI/CD pipelines, and infrastructure automation. Passionate about building scalable,
@@ -926,7 +956,7 @@
 
             <div class="about-content scroll-animate">
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Karthik Ravishankar" />
+                    <img src="img/IMG_8286.jpg" alt="Karthik Ravishankar" />
                 </div>
                 <div class="about-text">
                     <h3>Building the Future of Development</h3>
@@ -1297,7 +1327,7 @@
             </div>
 
             <div class="footer-text">
-                <p>&copy; 2025 Karthik Ravishankar. Built with modern web technologies.</p>
+                <p>&copy; 2025 Karthik Ravishankar.</p>
             </div>
         </div>
     </footer>
